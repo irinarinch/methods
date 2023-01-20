@@ -26,4 +26,3 @@ test('match an array of types', () => {
 
   expect(getError).toThrow(new Error('Incorrect type'));
 });
-

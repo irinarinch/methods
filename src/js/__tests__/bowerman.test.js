@@ -42,12 +42,12 @@ test('dead character', () => {
 });
 
 test('damaged character', () => {
-  const bowerman = new Bowerman('Bowerman');
-  bowerman.getCharacter();
+  const bowerman2 = new Bowerman('Bowerman');
+  bowerman2.getCharacter();
 
-  bowerman.damage(10);
+  bowerman2.damage(10);
 
-  expect(bowerman.health).toBe(92.5);
+  expect(bowerman2.health).toBe(92.5);
 });
 
 test('character without health', () => {
