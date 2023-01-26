@@ -1,7 +1,6 @@
 import Daemon from '../daemon';
 
 const daemon = new Daemon('Daemon');
-daemon.getCharacter();
 
 const instance = {
   name: 'Daemon',

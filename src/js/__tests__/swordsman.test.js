@@ -1,7 +1,6 @@
 import Swordsman from '../swordsman';
 
 const swordsman = new Swordsman('Swordsman');
-swordsman.getCharacter();
 
 const instance = {
   name: 'Swordsman',

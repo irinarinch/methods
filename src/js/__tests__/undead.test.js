@@ -1,7 +1,6 @@
 import Undead from '../undead';
 
 const undead = new Undead('Undead');
-undead.getCharacter();
 
 const instance = {
   name: 'Undead',

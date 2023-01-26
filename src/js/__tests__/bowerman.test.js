@@ -1,7 +1,6 @@
 import Bowerman from '../bowerman';
 
 const bowerman = new Bowerman('Bowerman');
-bowerman.getCharacter();
 
 const instance = {
   name: 'Bowerman',
@@ -43,7 +42,6 @@ test('dead character', () => {
 
 test('damaged character', () => {
   const bowerman2 = new Bowerman('Bowerman');
-  bowerman2.getCharacter();
 
   bowerman2.damage(10);
 

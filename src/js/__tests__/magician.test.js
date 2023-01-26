@@ -1,7 +1,6 @@
 import Magician from '../magician';
 
 const magician = new Magician('Magician');
-magician.getCharacter();
 
 const instance = {
   name: 'Magician',

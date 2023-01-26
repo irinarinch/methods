@@ -1,7 +1,6 @@
 import Zombie from '../zombie';
 
 const zombie = new Zombie('Zombie');
-zombie.getCharacter();
 
 const instance = {
   name: 'Zombie',

@@ -1,27 +1,24 @@
 import Character from '../character';
 
+let character;
+
 test('type of name', () => {
-  const character = new Character('DaemonName', 'Daemon');
-  character.getCharacter();
+  character = new Character('DaemonName', 'Daemon');
 
   expect.stringContaining(character.name);
 });
 
 test('length of name', () => {
-  const character = new Character('DaemonNameDaemonName', 'Daemon');
-
   function getError() {
-    character.getCharacter();
+    character = new Character('DaemonNameDaemonName', 'Daemon');
   }
 
   expect(getError).toThrow(new Error('Invalid name'));
 });
 
 test('match an array of types', () => {
-  const character = new Character('DaemonName', 'DaemonDaemon');
-
   function getError() {
-    character.getCharacter();
+    character = new Character('DaemonName', 'DaemonDaemon');
   }
 
   expect(getError).toThrow(new Error('Incorrect type'));
